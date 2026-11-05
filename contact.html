@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اتصل بنا | دليل فعاليات الجامعة الافتراضية</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@400;700;800&family=Cairo:wght@400;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg svu-navbar sticky-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-logo"><i class="bi bi-calendar2-event"></i></span>
+          دليل فعاليات الجامعة الافتراضية
+        </a>
+        <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html">الفعاليات</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">عن الدليل</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contact.html">اتصل بنا</a></li>
+          </ul>
+          <button type="button" class="theme-toggle" aria-label="الوضع الداكن"><i class="bi bi-moon-stars-fill"></i></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-header">
+      <div class="container">
+        <h1>اتصل بنا</h1>
+        <p>نسعد بأسئلتكم واقتراحاتكم وطلبات نشر الفعاليات</p>
+      </div>
+    </div>
+
+    <div class="container pb-5">
+      <div class="row g-4">
+        <!-- Contact form -->
+        <div class="col-lg-7">
+          <div class="contact-card">
+            <h2 class="h4 fw-bold mb-3">أرسل رسالة</h2>
+            <div id="formAlert" class="alert d-none" role="alert"></div>
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label fw-bold">الاسم الكامل</label>
+                <input type="text" class="form-control form-control-lg" id="name" name="name" placeholder="اكتب اسمك هنا" required>
+                <div class="invalid-feedback">الاسم مطلوب (3 أحرف على الأقل).</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold">البريد الإلكتروني</label>
+                <input type="email" class="form-control form-control-lg" id="email" name="email" placeholder="name@example.com" required>
+                <div class="invalid-feedback">يرجى إدخال بريد إلكتروني صالح.</div>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label fw-bold">الموضوع (اختياري)</label>
+                <select class="form-select form-select-lg" id="subject" name="subject">
+                  <option value="استفسار">استفسار عام</option>
+                  <option value="فعالية">طلب نشر فعالية</option>
+                  <option value="اقتراح">اقتراح تحسين</option>
+                  <option value="أخرى">أخرى</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label fw-bold">الرسالة</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="اكتب رسالتك بالتفصيل..." required></textarea>
+                <div class="invalid-feedback">الرسالة مطلوبة (10 أحرف على الأقل).</div>
+              </div>
+              <button type="submit" class="btn btn-svu btn-lg">
+                <i class="bi bi-send"></i> إرسال الرسالة
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact info -->
+        <div class="col-lg-5">
+          <div class="contact-card h-100">
+            <h2 class="h4 fw-bold mb-4">معلومات التواصل</h2>
+
+            <div class="contact-info-item">
+              <div class="icon"><i class="bi bi-envelope-fill"></i></div>
+              <div>
+                <h6 class="fw-bold mb-0">البريد العام</h6>
+                <a href="mailto:events@svuonline.org">events@svuonline.org</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="icon"><i class="bi bi-mortarboard-fill"></i></div>
+              <div>
+                <h6 class="fw-bold mb-0">الجامعة</h6>
+                <p class="mb-0 text-muted">الجامعة الافتراضية السورية (SVU)</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="icon"><i class="bi bi-globe2"></i></div>
+              <div>
+                <h6 class="fw-bold mb-0">الموقع الرسمي</h6>
+                <a href="https://www.svuonline.org" target="_blank" rel="noopener">www.svuonline.org</a>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="icon"><i class="bi bi-clock-fill"></i></div>
+              <div>
+                <h6 class="fw-bold mb-0">أوقات الرد</h6>
+                <p class="mb-0 text-muted">خلال 1–3 أيام عمل</p>
+              </div>
+            </div>
+
+            <hr>
+            <h6 class="fw-bold mb-3">تابعنا على السوشيال</h6>
+            <div class="social-links">
+              <a href="#" style="background:#1877f2;color:#fff;" aria-label="فيسبوك"><i class="bi bi-facebook"></i></a>
+              <a href="#" style="background:#000;color:#fff;" aria-label="تويتر"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" style="background:#e1306c;color:#fff;" aria-label="إنستغرام"><i class="bi bi-instagram"></i></a>
+              <a href="#" style="background:#ff0000;color:#fff;" aria-label="يوتيوب"><i class="bi bi-youtube"></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="svu-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5>دليل فعاليات الجامعة الافتراضية</h5>
+          <p class="mb-0">نسعد بتواصلكم واقتراحاتكم.</p>
+        </div>
+        <div class="col-md-4">
+          <h6>روابط سريعة</h6>
+          <ul class="list-unstyled">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="events.html">الفعاليات</a></li>
+            <li><a href="about.html">عن الدليل</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6>تواصل معنا</h6>
+          <p class="mb-1"><i class="bi bi-envelope"></i> events@svuonline.org</p>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 دليل فعاليات الجامعة الافتراضية السورية — BWP401</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
